@@ -1,0 +1,18 @@
+API Key (v3 auth)
+62b02abd5a65773a68f6537cbbd0b18a
+
+Example API Request
+https://api.themoviedb.org/3/movie/550?api_key=62b02abd5a65773a68f6537cbbd0b18a
+
+API Read Access Token (v4 auth)
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MmIwMmFiZDVhNjU3NzNhNjhmNjUzN2NiYmQwYjE4YSIsInN1YiI6IjYzZTMwMWI2ODI4OWEwMDBiNTBmMzE2YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.FWWcUgmqx3xQjixqlqVvjFxEwYmwygHX7d9Olu7kzNI
+
+
+https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7ZINBixo7zO21iF9doe1cSTHrV4.jpg
+https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sv1xJUazXeYqALzczSZ3O6nkH75.jpg
+
+https://www.themoviedb.org/t/p/w600_and_h900_bestv2
+
+
+
+https://api.themoviedb.org/3/genre/movie/list?api_key=62b02abd5a65773a68f6537cbbd0b18a&language=en-US

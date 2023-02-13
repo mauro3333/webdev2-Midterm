@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Source Code Pro', monospace; */
+	font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(22, 90, 81);
+}
+
+
+h1{
+    color: rgb(8, 37, 134);
+    font-weight: bolder;
+	text-align: center;
+	margin: 10px;
+    padding: 10px;
+    border-color: rgb(151, 137, 137);
+    background-color: rgb(217, 233, 180);
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+h2{
+    color: rgb(14, 13, 13);
+    font-weight: bolder;
+}
+
+.flip-card {
+    /* display: flex; */
+    background-color: transparent;
+    /* width: 300px;
+    height: 300px; */
+
+    min-width: 300px;
+    min-height: 450px;
+    perspective: 1000px;
+    /* padding: 5px; */
+    margin: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.flip-card:hover .flip-card-inner {
+    /* transform: rotateY(180deg); */
+    cursor: pointer;
+}
+
+.flip-card-front,
+.flip-card-back {
+
+    /* flex-direction: row; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background-color: #9fb1b6;
+    color: black;
+    font-weight: bolder;
+}
+
+.flip-card-back {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    background-color: #011420;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	margin: 10px;
+
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+.front-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.genre-div {
+    color: rgb(5, 50, 102);
+}
+
+.filter-button {
+    font-size: 20px;
+    background-color: rgb(235, 197, 28);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.filterActive-button {
+    font-size: 30px;
+    background-color: rgb(75, 78, 99);
+    color: aquamarine;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.filter-button:hover, .search-button:hover {
+    cursor: pointer;
+    color: rgb(33, 19, 223);
+    background-color: rgb(128, 226, 137);
+    transition: transform 0.2s;
+    transform: scale(1.2)
+}
+
+.filter-div, .search-container {
+    padding: 10px;
+    margin: 10px;
+    border-color: rgb(151, 137, 137);
+    background-color: rgb(139, 167, 190);
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.search-button {
+    font-size: 20px;
+    width: 200px;
+    background-color: rgb(235, 197, 28);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(183, 228, 213);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filter-div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+	overflow: hidden;
+}
+
+.sticky {
+	position: fixed;
+	left: 480px;
+	top: 0;
+	z-index: 10;
+	width: 70%;
+}
+
+.sticky-top {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	/* width: 100%; */
+}
+
+

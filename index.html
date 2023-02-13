@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">MOVIES AND TV SHOWS APP</h1>
+        <div class="search-container">
+            <h2>Search By:</h2>
+            <div>
+                <div>
+                    <button type="button" class="search-button" onclick="searchTv()">Search TV Shows</button>
+                    <input type="text" id="searchTv-input" class="search-input">
+                </div>
+    
+                <div>
+                    <button type="button" class="search-button" onclick="searchMovie()">Search Movies</button>
+                    <input type="text" id="searchMovie-input" class="search-input">
+                </div>
+            </div>
+        </div>
+    
+        <div id="filter-div" class="filter-div">
+            <H2>Filter By:</H2>
+            <div id="filter-container" class="filter-container">
+            </div>
+        </div>
+    
+    
+    </header>
+
+    <H1>MOVIES</H1>
+    <div id="moviesContainer" class="Container"></div>
+
+    <H1>TV SHOWS</H1>
+    <div id="tvContainer" class="Container"></div>
+</body>
+
+</html>
